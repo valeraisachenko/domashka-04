@@ -151,9 +151,10 @@ h1,h2,h3,h4,h4,h5,h6 {
     
 .auth-nav .item+.item {
     margin-left: 50px;
-            }
+}
 
 .link-adres{
+    display: flex;
     color: var(--title-text-color);
     text-decoration: none;
     font-family:'Roboto';
@@ -162,7 +163,21 @@ h1,h2,h3,h4,h4,h5,h6 {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+    
 }
+
+.link-adres::before {
+    display: inline-block;
+        content: "";
+        width: 10px;
+        height: 16px;
+        margin-right: 10px;
+        background-image: url(../img/tel.svg);
+        cursor: pointer;
+
+}
+
+
 
 .auth-nav .link-adres{
     display: block;
@@ -177,9 +192,20 @@ h1,h2,h3,h4,h4,h5,h6 {
 /*HERO Bunner*/
 
 .hero{
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     height: 600px;
-    background-color:var(--baner-footer-color);
+    background-image: linear-gradient( to right, 
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../img/Img\ \(1\).jpg);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--title-text-color);
 }
 
 .bunner {
@@ -239,6 +265,17 @@ h1,h2,h3,h4,h4,h5,h6 {
 .future-list {
     display: flex;
 }
+
+.svg {
+    display: flex;
+    background-color: var(--secondary-bg-team);
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .zagolovok {
     font-family:'Roboto';
@@ -519,3 +556,4 @@ font-family: 'Roboto';
 
     color: var(--adres-color)
 }
+
