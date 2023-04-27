@@ -174,9 +174,14 @@ h1,h2,h3,h4,h4,h5,h6 {
         margin-right: 10px;
         background-image: url(../img/tel.svg);
         cursor: pointer;
+        color: var(--accent-color);
+    
 
 }
 
+.fill:hover {
+    fill: #212121;
+}
 
 
 .auth-nav .link-adres{
