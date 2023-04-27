@@ -335,7 +335,7 @@ h1,h2,h3,h4,h4,h5,h6 {
 
 .actions {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     list-style: none;
     width: 245px;
     height: 63px;
@@ -358,17 +358,18 @@ h1,h2,h3,h4,h4,h5,h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--title-text-color);
-}
-
-.bicon:hover{
-    fill: var(--primary-white-color);
 }
 
 .icone {
     fill: #AFB1B8;
     width: 20px;
     height: 20px;
+    padding: 15px;
+}
+
+.icone:hover{
+    fill: var(--primary-white-color);
+    
 }
 
 .iconeli:hover {
