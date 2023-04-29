@@ -490,10 +490,6 @@ h1,h2,h3,h4,h4,h5,h6 {
     letter-spacing: 0.03em;
     color: var(--accent-color);
     text-decoration: none;
-
-    margin: 0;
-    padding-top: 60px;
-    padding-bottom: 20px;
 }
 
 .logos-footer {
@@ -515,7 +511,12 @@ h1,h2,h3,h4,h4,h5,h6 {
     margin: 0;
 }
 
-.adres-footer {
+.paragraph {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.adress {
     text-decoration: none;
     font-family:'Roboto';
     font-style: normal;
@@ -609,8 +610,16 @@ color: var(--accent-color);
     margin-bottom: 94px;
 }
 
+
+
 .item-portfolio > .card-set {
     border: 1px solid #EEEEEE;
+}
+
+.card-set:hover{
+    background: #FFFFFF;
+        border: 1px solid #EEEEEE;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .titl {
@@ -635,5 +644,234 @@ font-family: 'Roboto';
     color: var(--adres-color)
 }
 
+/*постоянные клиенты*/
+
+.list-best {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px ;
+    margin-bottom: 94px;
+}
+
+.my-client {
+    color: var(--title-text-color);
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    margin-top: 94px;
+}
+
+.iter::before {
+    content: "";
+    display: block;
+    height: 90px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.iter {
+    margin-right: 30px;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #afb1b8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.iter:hover {
+    border: 1px solid #2196f3;
+}
+
+.iter:nth-child(1)::before {
+    background-image: url(../img/Logo\ \(1\).svg);
+}
+
+.iter:nth-child(2)::before {
+    background-image: url(../img/company.svg);
+}
+
+.iter:nth-child(3)::before {
+    background-image: url(../img/krug.svg);
+}
+
+.iter:nth-child(4)::before {
+    background-image: url(../img/foster\ peters.svg);
+}
 
 
+.iter:nth-child(5)::before {
+    background-image: url(../img/brend.svg);
+}
+
+.iter:nth-child(6)::before {
+    background-image: url(../img/kub.svg);
+}
+
+.iter:nth-child(6n) {
+    margin-right: 0;
+}
+
+.span-logo {
+    display: none;
+}
+
+/*Footers*/
+
+.footer-setion {
+    display: block;
+    background-color: #2f303a;
+}
+
+.accent {
+    color: var(--primary-white-color);
+}
+
+.accent:hover{
+    color: var(--accent-color);
+}
+
+.container.container-footer {
+    display: flex;
+    height: 252px;
+    align-items: baseline;
+}
+
+.adres-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 75px;
+    min-width: 231px;
+    margin-top: 60px;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 207px;
+    margin-right: 102px;
+}
+
+.accession {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+
+.lezt-post {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 94px;
+}
+
+.iten-one {
+    padding-bottom: 9px;
+}
+
+.info {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+
+    text-decoration: none;
+    
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.info:hover{
+    color: var(--accent-color);
+}
+
+.links-one {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    background-image: url(../img/inst\ footer\ \(2\).svg);
+    border-radius: 50%;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.links-twit {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    background-image: url(../img/twitter\ footer\ \(1\).svg);
+    border-radius: 50%;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.links-faceb {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    background-image: url(../img/fb\ foter.svg);
+    border-radius: 50%;
+    background-size: 13px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.links-link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    background-image: url(../img/In\ footer\ \(3\).svg);
+    border-radius: 50%;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.links-faceb:hover {
+    background-color: #2196f3;
+}
+
+.links-one:hover {
+    background-color: #2196f3;
+}
+
+.links-twit:hover {
+    background-color: #2196f3;
+}
+
+.links-link:hover {
+    background-color: #2196f3;
+}
+
+.distance {
+    padding-right: 10px;
+}
